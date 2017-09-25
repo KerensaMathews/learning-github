@@ -1,0 +1,271 @@
+/********************
+  General
+********************/
+
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+    color: #000;
+    max-width: 100%;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    text-align: center;
+    max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  color: #3fbf7f;
+}
+
+ul {
+    list-style-type: none;
+}
+
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  text-align: center;
+  color: #000;
+}
+
+.header-nav,
+.footer-nav,
+.social-media,
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/********************
+  Header
+********************/
+
+.coding-img {
+  width: 100px;
+  margin: 25px auto 0;
+}
+
+.name {
+  margin-bottom: 10px;
+}
+
+.header-nav-container {
+  margin: 0px;
+}
+
+.header-nav {
+  justify-content: space-around;
+  padding: 30px 25px 0;
+  margin: 0px;
+}
+
+.header-nav-link {
+  padding: 5px;
+}
+
+.hr {
+  height: 12px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+  margin: 20px 20px 0;
+}
+
+/********************
+  Main
+********************/
+
+.gallery-caption {
+  font-size: 0.9em;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.gallery-section {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.billboard-img {
+  width: 100%;
+  max-width: 100%;
+  margin: 15px auto;
+}
+
+.feat-work-title {
+ color: #666;
+}
+
+.gallery {
+  justify-content: space-around;
+}
+
+.gallery-section {
+  margin: 0 10px;
+}
+
+.gallery-img {
+  display: block;
+  width: 410px;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+/********************
+  Footer
+********************/
+
+.footer-nav,
+.social-media {
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.footer-nav {
+  margin: 0;
+}
+
+.footer-nav-link {
+  margin: 10px;
+}
+
+.copyright {
+  padding: 10px;
+}
+
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+[class*="zocial-"] {
+  padding: 10px;
+}
+
+/********************
+  Responsive Design
+********************/
+
+@media screen and (min-width: 350px) {
+
+  .gallery-caption {
+    font-size: 1em;
+  }
+
+  [class*="zocial-"] {
+    font-size: 1.5em;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+
+  .coding-img {
+    margin: 20px 0 0 20px;
+  }
+
+  .title {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+  }
+
+  .name,
+  .job-title {
+    text-align: right;
+  }
+
+  .header-nav {
+    justify-content: flex-start;
+    margin-left: 20%;
+  }
+
+  .header-nav-link {
+    margin: 0 10px;
+  }
+
+}
+
+@media screen and (min-width: 600px) {
+
+.name {
+  font-size: 2.5em;
+}
+
+.asterisk {
+  color: #fff;
+}
+
+}
+
+@media screen and (min-width: 850px) {
+
+  .name {
+    font-size: 3.5em;
+  }
+
+  .title {
+    margin-top: -25px;
+  }
+
+  .feat-work-title {
+    text-align: left;
+    margin-left: -10px;
+  }
+
+  .header-nav-link {
+    font-size: 1.2em;
+    margin: 0 10px;
+  }
+
+}
+
+@media screen and (min-width: 1150px) {
+
+  .coding-img {
+    margin: 25px 0 -51px 25px;
+  }
+
+  .header-nav {
+    padding-bottom: 22px;
+  }
+
+  .title {
+    top: 0;
+  }
+
+}
