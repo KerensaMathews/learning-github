@@ -8,6 +8,7 @@ body,
 div,
 ul,
 li,
+a,
 p,
 h1,
 h2,
@@ -17,11 +18,11 @@ h5,
 h6 {
     padding: 0;
     margin: 0;
-    font-family: "Inconsolata", monospace;
+    font-family: 'Fresca', serif;
     color: #000;
-    max-width: 100%;
+    max-width: 100;
+    text-align: center;
 }
-
 
 * {
   box-sizing: border-box;
@@ -29,8 +30,6 @@ h6 {
 
 body {
     background: #fff;
-    text-align: center;
-    max-width: 100%;
 }
 
 a {
@@ -45,21 +44,12 @@ a:hover {
   color: #3fbf7f;
 }
 
-ul {
-    list-style-type: none;
+.active {
+  color: #3fbf7f;
 }
 
-div,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a {
-  text-align: center;
-  color: #000;
+ul {
+    list-style-type: none;
 }
 
 .header-nav,
@@ -76,15 +66,15 @@ a {
 
 .coding-img {
   width: 100px;
-  margin: 25px auto 0;
+  margin: 25px 25px 20px;
+}
+
+.title {
+  margin: 0 20px;
 }
 
 .name {
   margin-bottom: 10px;
-}
-
-.header-nav-container {
-  margin: 0px;
 }
 
 .header-nav {
@@ -94,7 +84,8 @@ a {
 }
 
 .header-nav-link {
-  padding: 5px;
+  display: inline-block;
+  padding: 15px 10px;
 }
 
 .hr {
@@ -110,13 +101,12 @@ a {
 
 .gallery-caption {
   font-size: 0.9em;
-  display: inline-block;
-  margin: 0 auto;
+  display: block;
+  margin: 10px auto 0;
   text-align: center;
 }
 
 .gallery-section {
-  display: inline-block;
   margin: 0 auto;
   text-align: center;
 }
@@ -124,7 +114,7 @@ a {
 .billboard-img {
   width: 100%;
   max-width: 100%;
-  margin: 15px auto;
+  margin: 15px auto 20px;
 }
 
 .feat-work-title {
@@ -136,14 +126,15 @@ a {
 }
 
 .gallery-section {
-  margin: 0 10px;
+  margin: 20px 10px 15px;
 }
 
 .gallery-img {
   display: block;
   width: 410px;
-  margin: 20px auto;
+  margin: 0 auto 15px;
   max-width: 100%;
+  border: 1px solid black;
 }
 
 /********************
@@ -152,20 +143,28 @@ a {
 
 .footer-nav,
 .social-media {
-  margin-top: 10px;
   justify-content: center;
 }
 
 .footer-nav {
-  margin: 0;
+  padding: 10px 10px 0;
+}
+
+.social-media {
+  padding-bottom: 10px;
 }
 
 .footer-nav-link {
-  margin: 10px;
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+.last-updated {
+  padding: 10px;
 }
 
 .copyright {
-  padding: 10px;
+  padding: 0 10px 10px;
 }
 
 [class*="zocial-"]:before {
@@ -173,7 +172,9 @@ a {
 }
 
 [class*="zocial-"] {
-  padding: 10px;
+  display: inline-block;
+  padding: 15px 10px;
+  font-size: 1.5em;
 }
 
 /********************
@@ -192,16 +193,25 @@ a {
 
 }
 
+@media screen and (min-width: 400px) {
+
+  .header-nav {
+    justify-content: center;
+  }
+
+}
+
 @media screen and (min-width: 500px) {
 
-  .coding-img {
-    margin: 20px 0 0 20px;
+  .coding-img-div {
+    text-align: left;
   }
 
   .title {
     position: absolute;
-    top: 5px;
-    right: 20px;
+    top: 25px;
+    right: 25px;
+    margin: 0;
   }
 
   .name,
@@ -209,63 +219,100 @@ a {
     text-align: right;
   }
 
-  .header-nav {
-    justify-content: flex-start;
-    margin-left: 20%;
+  .name {
+    font-size: 2.5em;
   }
 
   .header-nav-link {
     margin: 0 10px;
+  }
+
+}
+
+@media screen and (min-width: 525px) {
+
+  .header-nav-link {
+    padding-bottom: 0;
   }
 
 }
 
 @media screen and (min-width: 600px) {
 
-.name {
-  font-size: 2.5em;
+  .header-nav {
+    /*margin-left: 20%;*/
+  }
+
 }
 
-.asterisk {
-  color: #fff;
-}
+@media screen and (min-width: 700px) {
+
+  .header-nav {
+    justify-content: flex-start;
+    margin-left: 23%;
+  }
 
 }
 
 @media screen and (min-width: 850px) {
 
-  .name {
-    font-size: 3.5em;
+  .header-nav-link,
+  .footer-nav-link,
+  .gallery-caption {
+    font-size: 1.2em;
+  }
+
+  .coding-img-div {
+    margin-bottom: -80px;
   }
 
   .title {
-    margin-top: -25px;
+    top: 15px;
+  }
+
+  .asterisk {
+    color: #fff;
   }
 
   .feat-work-title {
     text-align: left;
-    margin-left: -10px;
+    margin: -2px 0 -2px -5px;
   }
 
-  .header-nav-link {
-    font-size: 1.2em;
-    margin: 0 10px;
+  .gallery-section {
+    width: 45%;
+  }
+
+}
+
+@media screen and (min-width: 1050px) {
+
+  .name {
+    font-size: 3.5em;
   }
 
 }
 
 @media screen and (min-width: 1150px) {
 
-  .coding-img {
-    margin: 25px 0 -51px 25px;
+  .header-nav {
+    /*margin-left: 17%;*/
   }
+
+  a {
+    font-size: 1.3em;
+  }
+
+  .gallery-section {
+    width: 30%;
+  }
+
+}
+
+@media screen and (min-width: 1300px) {
 
   .header-nav {
-    padding-bottom: 22px;
-  }
-
-  .title {
-    top: 0;
+    margin-left: 25%;
   }
 
 }
