@@ -23,5 +23,5 @@ Fixed in 11/5/17 update.
 
 ### Future
 
-- Will likely adjust styling periodically, for the resume page individually and/or as part of a larger site redesign. 
+- Will adjust styling periodically, for the resume page individually and/or as part of a larger site redesign. 
 - Will update resume sections with new information as necessary.
