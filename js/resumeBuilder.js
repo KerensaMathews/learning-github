@@ -11,7 +11,7 @@ var bio = {
     },
     welcomeMessage: "Hello! I am a front end web developer based in southern Colorado, USA. I'm available to work on-site or remotely. Thank you for visiting!",
     skills: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "Responsive Web Design", "Website Optimization"],
-    biopic: "http://via.placeholder.com/250x239",
+    biopic: "images/resume-profile.jpg",
     display: function() {
 
         var formattedName = HTMLheaderName.replace("%data%", bio.name);
@@ -149,21 +149,21 @@ var work = {
 var projects = {
     projects: [{
             title: "Aguilar, Colorado",
-            dates: "2016-Present",
-            description: "A website for the small town of Aguilar, Colorado; purposes include making local information available online, increasing tourism, and providing a community portal for its citizens and visitors.",
-            images: ["http://placehold.it/400x200"]
+            dates: "2017",
+            description: "A website for the small town of Aguilar, Colorado, and an example of a community website. Created as an online hub to share town news, details on local events, and information about Aguilar and surrounding areas. Other significant goals are to increase tourism and to provide a community portal for citizens and visitors.",
+            images: ["images/community-resume.png"]
         },
         {
             title: "Attention Deficit Order",
-            dates: "2016-Present",
-            description: "A website for those afflicted with ADD or ADHD; features include articles, tips, step-by-step coping mechanisms, and in-depth personalized services upon request.",
-            images: ["http://placehold.it/400x200"]
+            dates: "2017",
+            description: "A website for those afflicted with ADD/ADHD, and an example of a self-help website. Features include articles, tips, step-by-step coping mechanisms, and in-depth personalized services upon request.",
+            images: ["images/self-help-resume.png"]
         },
         {
             title: "Ladybugger",
             dates: "2017",
-            description: "A two-dimensional game reminiscient of the arcade game 'Frogger.' Built with JavaScript; playable in browser.",
-            images: ["images/ladybugger.png"]
+            description: "A two-dimensional game reminiscient of the arcade game 'Frogger.' Built with JavaScript on HTML canvas; playable in browser. Future expansion to include character selection, scoring, and multiple levels with storyline.",
+            images: ["images/ladybugger-resume.png"]
         }
     ],
     display: function() {
