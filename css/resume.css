@@ -7,16 +7,14 @@
     overflow: auto;
 }
 
+img {
+  max-width: 100%;
+  margin-top: 15px;
+}
+
 /********************
   Header
 ********************/
-
-.header-nav-container,
-.header-nav,
-.footer-nav,
-.copyright {
-  background: #ffc04d;
-}
 
 .header-nav,
 .footer-nav {
@@ -24,58 +22,44 @@
 }
 
 .header-nav {
-  padding-left: 40%;
-}
-
-.footer-nav {
-  padding-top: 10px;
-}
-
-#header {
-  background: #ffc04d;
-  background: -webkit-linear-gradient(#ffc04d, #fff); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#ffc04d, #fff); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#ffc04d, #fff); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#ffc04d, #fff); /* Standard syntax */
+  padding: 10px 10px 0 10px;
+  margin: 0;
+  justify-content: center;
 }
 
 .biopic {
-    width: 40%;
-    max-width: 250px;
-}
-
-#name {
-    padding: 20px 30px 0 20px;
-}
-
-#role {
-    margin-left: 10px;
+    display: none;
 }
 
 hr {
-   margin: 20px;
-   border: 0;
-   height: 1px;
-   background: #333;
-   background-image: linear-gradient(to right, #333, #ffc04d);
+   display: none;
+}
+
+#header,
+#lets-connect {
+  width: 100%;
+}
+
+.topContacts {
+  padding-top: 20px;
+}
+
+.topContacts,
+.footerContacts {
+  width: 180px;
+  display: block;
+  margin: 0 auto;
 }
 
 .contact-category-text {
     font-weight: bold;
-    margin: 20px;
+    /*margin-left: 20vw;*/
 }
 
 .contact-info-text,
 .skills-text {
     display: inline-block;
-}
-
-.contact-info-text {
-    margin: 5px;
-}
-
-.skills-text {
-    margin: 15px;
+    padding: 5px;
 }
 
 .welcome-message {
@@ -86,7 +70,11 @@ hr {
 }
 
 #skills-heading {
-    margin: 30px 10px 10px;
+    margin: 20px 10px;
+}
+
+#skills {
+    padding: 0 10px 10px;
 }
 
 .flex-box-space-around {
@@ -137,7 +125,7 @@ hr {
 .education-entry,
 .work-entry,
 .project-entry {
-    margin: 25px 5px;
+  margin: 25px 5px;
 }
 
 .date-text {
@@ -158,9 +146,7 @@ hr {
 
 .major-text {
     margin: 10px;
-    /*padding-bottom: 30px;
-    border-bottom: 1px solid #000*/
-  }
+}
 
 a {
     display: block;
@@ -197,22 +183,20 @@ a {
   Footer
 ********************/
 
-#footer {
-  background: #ffc04d;
-  background: -webkit-linear-gradient(#fff, #ffc04d); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#fff, #ffc04d); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#fff, #ffc04d); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#fff, #ffc04d); /* Standard syntax */
-}
-
 #lets-connect {
-  padding: 5px;
-  margin-top: 20px;
+  padding: 15px 15px 0 15px;
 }
 
-#footerContacts {
-  margin: 10px;
+.lets-connect {
+  padding-bottom: 15px;
+}
+
+.footer-nav {
   padding: 10px;
+}
+
+.footer-nav-link {
+  margin: 0;
 }
 
 /********************
@@ -237,6 +221,20 @@ a {
     font-size: 1.5em;
   }
 
+  .topContacts,
+  .footerContacts {
+    width: 220px;
+  }
+
+  .topContacts {
+    padding-top: 25px;
+  }
+
+  #skills-heading {
+    margin: 25px 10px;
+  }
+
+  #role,
   .contact-category-text,
   .contact-info-text,
   .welcome-message,
@@ -249,13 +247,16 @@ a {
     font-size: 1.25em;
   }
 
-  #header,
-  #lets-connect,
   #education,
   #workExperience,
   #projects {
     width: 75%;
     display: inline-block;
+  }
+
+  #skills {
+    width: 75%;
+    margin: 0 auto;
   }
 
   #education,
@@ -278,6 +279,22 @@ a {
 
   #map {
     height: 200px;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+
+  .header-nav {
+    padding: 15px;
+  }
+
+}
+
+@media screen and (min-width: 525px) {
+
+  .header-nav {
+    padding: 15px 15px 25px 15px;
   }
 
 }
@@ -316,16 +333,22 @@ a {
     font-size: 1.3em;
   }
 
-  .contact-category-text {
-    margin-left: 50px;
-  }
-
   #header,
   #education,
   #workExperience,
   #projects,
-  #mapDiv {
+  #mapDiv,
+  #lets-connect {
     width: 65%;
+  }
+
+  #skills {
+    width: 100%;
+  }
+
+  #header,
+  #lets-connect {
+    margin: 0 auto;
   }
 
   .education-entry,
@@ -339,61 +362,35 @@ a {
     display: inline-block;
   }
 
-  #lets-connect {
-    width: 66%;
-    backgou
-  }
-
 }
 
 @media screen and (min-width: 851px) {
 
-  #header {
-    width: 100%;
-    text-align: left;
-  }
-
-  .biopic {
-    float: left;
-    display: inline;
-    margin: 25px;
-  }
-
-  #name,
-  #role {
-    display: inline-block;
-    margin-right: 10px;
-  }
-
-  hr {
-    clear: right;
-  }
-
-  .contact-category-text {
-    margin-left: 20px;
-  }
-
-  #skills-heading {
-    margin-left: 30px;
-  }
-
+  #header,
   #education,
   #workExperience,
   #projects,
-  #mapDiv {
+  #mapDiv,
+  #lets-connect {
     width: 50%;
   }
 
-  #lets-connect {
-    width: 51%;
-  }
-
-  .welcome-message {
-    margin-left: 50px;
-  }
-
-  .flex-box-space-around {
+  /*.flex-box-space-around {
     margin-right: 15%;
+  }*/
+
+}
+
+@media screen and (min-width: 950px) {
+
+  .contact-category-text {
+    padding: 0 5px;
+  }
+
+  #skills,
+  .topContacts,
+  .footerContacts {
+    width: 460px;
   }
 
 }
